@@ -1,0 +1,10 @@
+<div class="card m-3" style="width: 20rem">
+  <a routerLink="/productdetails" (click)="navigateToProductDetails()">
+    <img [src]="product.image" style="width: 300px; height:300px" class="card-img-top" alt="..."
+  /></a>
+  <div class="card-body">
+    <h5 class="card-title"><span style="color: red"> Name :</span>{{ product.title }}</h5>
+    <h5 class="card-text"> <span style="color: red"> Price :</span>{{ product.price|coin }}</h5>
+    <button class="btn btn-warning" (click)="addToCart()">Add To Cart</button>
+  </div>
+</div>
